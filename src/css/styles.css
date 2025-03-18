@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+
+/* body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+}
+
+.nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 1.2rem 2rem;
+    background-color: rgb(44, 44, 59);
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 0.5rem;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+
+}
+
+.search {
+    width: 1.5rem;
+    height: 1rem;
+} */

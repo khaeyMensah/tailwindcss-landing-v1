@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+package-lock.json
+
+# Tailwind output files
+dist/
+
+# Environment files (if any)
+.env
+
+# Editor-specific files
+.vscode/
+.idea/
+.DS_Store
+
+# Dependency cache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
