@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/output.css">
-</head>
-<body>
-    <nav class="nav flex justify-between m-auto w-full bg-red-200 px-5" >
-        <div class="logo ">
-            Manage
-        </div>
-        <div class="nav-links space-x-6">
-            <a href="#" class="nav-item">Home</a>
-            <a href="#" class="nav-item">About</a>
-            <a href="#" class="nav-item">Project</a>
-            <a href="#" class="nav-item">Contact</a>
-        </div>
-        <div class="button">
-            <input type="button" class="w-10 bg-blue-200" placeholder="search">
-        </div>
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="relative container mx-auto bg-amber-500 p-6"
+    >
+    <div class="flex justify-between items-center ">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo">
+      </div>
+      <div class="hidden nav-links space-x-6 md:flex">
+        <a href="#" class="nav-item hover:text-amber-500">Home</a>
+        <a href="#" class="nav-item hover:text-amber-500">About</a>
+        <a href="#" class="nav-item hover:text-amber-500">Project</a>
+        <a href="#" class="nav-item hover:text-amber-500" >Contact</a>
+      </div>
+      <div class="button hidden md:flex">
+        <a
+          href="#"
+          class="bg-brightRed rounded-full hover:bg-amber-600 py-3 px-4 self-baseline"
+          >Get started</a
+        >
+      </div>
+    </div>
     </nav>
-</body>
+    <section id="hero">
+        <div class="carosel bg-amber-50 flex pt-2 h-50" >
+            hero
+        </div>
+    </section>
+  </body>
 </html>
