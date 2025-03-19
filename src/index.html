@@ -8,32 +8,29 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav
-      class="relative container mx-auto bg-amber-500 p-6"
-    >
-    <div class="flex justify-between items-center ">
-      <div class="logo">
-        <img src="./images/logo.svg" alt="logo">
-      </div>
-      <div class="hidden nav-links space-x-6 md:flex">
-        <a href="#" class="nav-item hover:text-amber-500">Home</a>
-        <a href="#" class="nav-item hover:text-amber-500">About</a>
-        <a href="#" class="nav-item hover:text-amber-500">Project</a>
-        <a href="#" class="nav-item hover:text-amber-500" >Contact</a>
-      </div>
-      <div class="button hidden md:flex">
+    <nav class="relative container mx-auto bg-amber-500 p-6">
+      <div class="flex justify-between items-center">
+        <div class="pt-2">
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
+        <!-- Menu-items -->
+        <div class="hidden space-x-6 md:flex">
+          <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+          <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+        </div>
+        <!-- button -->
         <a
           href="#"
-          class="bg-brightRed rounded-full hover:bg-amber-600 py-3 px-4 self-baseline"
+          class="hidden p-3 px-6 pt-2 text-white rounded-full baseline bg-brightRed hover:bg-brightRedLight md:block"
           >Get started</a
         >
       </div>
-    </div>
     </nav>
     <section id="hero">
-        <div class="carosel bg-amber-50 flex pt-2 h-50" >
-            hero
-        </div>
+      <div class="container bg-amber-50 flex pt-2 h-50">hero</div>
     </section>
   </body>
 </html>

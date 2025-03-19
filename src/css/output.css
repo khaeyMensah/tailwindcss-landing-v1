@@ -6,9 +6,12 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-200: oklch(0.885 0.062 18.334);
     --color-amber-50: oklch(0.987 0.022 95.277);
     --color-amber-500: oklch(0.769 0.188 70.08);
     --color-amber-600: oklch(0.666 0.179 58.318);
+    --color-blue-200: oklch(0.882 0.059 254.128);
+    --color-white: #fff;
     --spacing: 0.25rem;
     --default-font-family: var(--font-sans);
     --default-font-feature-settings: var(--font-sans--font-feature-settings);
@@ -23,6 +26,8 @@
       --font-mono--font-variation-settings
     );
     --color-brightRed: hsl(12, 88%, 59%);
+    --color-brightRedLight: hsl(12, 88%, 69%);
+    --color-darkGrayishBlue: hsl(227, 12%, 61%);
   }
 }
 @layer base {
@@ -197,6 +202,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .flex {
     display: flex;
   }
@@ -240,8 +248,17 @@
   .bg-amber-500 {
     background-color: var(--color-amber-500);
   }
+  .bg-blue-200 {
+    background-color: var(--color-blue-200);
+  }
   .bg-brightRed {
     background-color: var(--color-brightRed);
+  }
+  .bg-red-200 {
+    background-color: var(--color-red-200);
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
@@ -264,6 +281,9 @@
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
   }
+  .text-white {
+    color: var(--color-white);
+  }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
@@ -274,11 +294,30 @@
       }
     }
   }
+  .hover\:bg-brightRedLight {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-brightRedLight);
+      }
+    }
+  }
   .hover\:text-amber-500 {
     &:hover {
       @media (hover: hover) {
         color: var(--color-amber-500);
       }
+    }
+  }
+  .hover\:text-darkGrayishBlue {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-darkGrayishBlue);
+      }
+    }
+  }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
     }
   }
   .md\:flex {
